@@ -1,0 +1,2058 @@
+!SESSION 2018-07-14 00:41:34.712 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/SDPB18/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/SDPB18/.eclipse_keyring
+
+!ENTRY org.eclipse.ui 2 0 2018-07-14 00:43:05.177
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-07-14 00:43:05.177
+!MESSAGE Cannot bind to an undefined command: plug-in='com.liferay.ide.project.ui', id='com.liferay.ide.project.ui.upgrade.openLiferay7UpgradeAssistant'
+
+!ENTRY org.eclipse.core.net 1 0 2018-07-14 00:43:05.922
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16|softonic|*.softonic by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2018-07-14 00:43:06.919
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-14 00:43:06.919
+!MESSAGE A conflict occurred for ALT+COMMAND+V:
+Binding(ALT+COMMAND+V,
+	ParameterizedCommand(Command(com.liferay.ide.service.ui.buildService,Build Service,
+		Run the build-service command,
+		Category(com.liferay.ide.project.ui.handlers,Liferay Commands,Liferay Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@57f9f387,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+V,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.move.element,Move - Refactoring ,
+		Move the selected element to a new location,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6b4376e1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-14 00:43:06.919
+!MESSAGE A conflict occurred for ALT+COMMAND+W:
+Binding(ALT+COMMAND+W,
+	ParameterizedCommand(Command(com.liferay.ide.service.ui.buildWSDD,Build WSDD,
+		Run the build-wsdd command,
+		Category(com.liferay.ide.project.ui.handlers,Liferay Commands,Liferay Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@622c658d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+W,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.showInQuickMenu,Show In...,
+		Open the Show In menu,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3619bc9e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-14 00:43:06.919
+!MESSAGE A conflict occurred for ALT+COMMAND+N:
+Binding(ALT+COMMAND+N,
+	ParameterizedCommand(Command(com.liferay.ide.portlet.ui.buildLang,Build Languages,
+		Run the build-lang command,
+		Category(com.liferay.ide.project.ui.handlers,Liferay Commands,Liferay Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2e640411,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+N,
+	ParameterizedCommand(Command(org.eclipse.ui.file.newQuickMenu,New menu,
+		Open the New menu,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5e609b42,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2018-07-14 01:04:29.798
+!MESSAGE Failure reporting download statistics to URL: http://download.eclipse.org/stats/mylyn/3.24.1/org.eclipse.mylyn.commons
+!STACK 1
+org.eclipse.core.runtime.CoreException: Unable to read repository at http://download.eclipse.org/stats/mylyn/3.24.1/org.eclipse.mylyn.commons.
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:236)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.delegateGetLastModified(CachingTransport.java:390)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.getLastModified(CachingTransport.java:345)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.collectStats(MirrorRequest.java:268)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:235)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:153)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:707)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:63)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:160)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:84)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:273)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:197)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	... 1 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2018-07-14 01:04:29.799
+!MESSAGE Unable to read repository at http://download.eclipse.org/stats/mylyn/3.24.1/org.eclipse.mylyn.commons.
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:160)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:84)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:273)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:197)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2018-07-14 01:06:19.422
+!MESSAGE Failure reporting download statistics to URL: http://download.eclipse.org/stats/mylyn/3.24.1/org.eclipse.mylyn.commons.identity
+!STACK 1
+org.eclipse.core.runtime.CoreException: Unable to read repository at http://download.eclipse.org/stats/mylyn/3.24.1/org.eclipse.mylyn.commons.identity.
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:236)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.delegateGetLastModified(CachingTransport.java:390)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.getLastModified(CachingTransport.java:345)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.collectStats(MirrorRequest.java:268)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:235)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:153)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:707)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:63)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:160)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:84)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:273)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:197)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	... 1 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2018-07-14 01:06:19.423
+!MESSAGE Unable to read repository at http://download.eclipse.org/stats/mylyn/3.24.1/org.eclipse.mylyn.commons.identity.
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:160)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:84)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:273)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:197)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2018-07-14 01:06:22.161
+!MESSAGE Failure reporting download statistics to URL: http://download.eclipse.org/stats/mylyn/3.24.1/org.eclipse.mylyn.commons.notifications
+!STACK 1
+org.eclipse.core.runtime.CoreException: Unable to read repository at http://download.eclipse.org/stats/mylyn/3.24.1/org.eclipse.mylyn.commons.notifications.
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:236)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.delegateGetLastModified(CachingTransport.java:390)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.getLastModified(CachingTransport.java:345)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.collectStats(MirrorRequest.java:268)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:235)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:153)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:707)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:63)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:160)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:84)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:273)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:197)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	... 1 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2018-07-14 01:06:22.162
+!MESSAGE Unable to read repository at http://download.eclipse.org/stats/mylyn/3.24.1/org.eclipse.mylyn.commons.notifications.
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:160)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:84)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:273)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:197)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2018-07-14 01:10:34.952 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/SDPB18/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/SDPB18/.eclipse_keyring
+
+!ENTRY org.eclipse.ui 2 0 2018-07-14 01:11:34.287
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-07-14 01:11:34.287
+!MESSAGE Cannot bind to an undefined command: plug-in='com.liferay.ide.project.ui', id='com.liferay.ide.project.ui.upgrade.openLiferay7UpgradeAssistant'
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-07-14 01:11:34.287
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.lsp4e', id='org.eclipse.lsp4e.togglehighlight'
+
+!ENTRY org.eclipse.core.net 1 0 2018-07-14 01:11:37.225
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16|softonic|*.softonic by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2018-07-14 01:11:38.296
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-14 01:11:38.297
+!MESSAGE A conflict occurred for ALT+COMMAND+W:
+Binding(ALT+COMMAND+W,
+	ParameterizedCommand(Command(com.liferay.ide.service.ui.buildWSDD,Build WSDD,
+		Run the build-wsdd command,
+		Category(com.liferay.ide.project.ui.handlers,Liferay Commands,Liferay Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@71a236e2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+W,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.showInQuickMenu,Show In...,
+		Open the Show In menu,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@25d6877c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-14 01:11:38.297
+!MESSAGE A conflict occurred for ALT+COMMAND+N:
+Binding(ALT+COMMAND+N,
+	ParameterizedCommand(Command(com.liferay.ide.portlet.ui.buildLang,Build Languages,
+		Run the build-lang command,
+		Category(com.liferay.ide.project.ui.handlers,Liferay Commands,Liferay Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@172d1224,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+N,
+	ParameterizedCommand(Command(org.eclipse.ui.file.newQuickMenu,New menu,
+		Open the New menu,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@102e9059,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-14 01:11:38.297
+!MESSAGE A conflict occurred for ALT+COMMAND+V:
+Binding(ALT+COMMAND+V,
+	ParameterizedCommand(Command(com.liferay.ide.service.ui.buildService,Build Service,
+		Run the build-service command,
+		Category(com.liferay.ide.project.ui.handlers,Liferay Commands,Liferay Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@705ba198,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+V,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.move.element,Move - Refactoring ,
+		Move the selected element to a new location,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@61272588,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-14 01:11:38.297
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1e64b7ba,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7aac4077,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-14 01:11:38.297
+!MESSAGE A conflict occurred for ALT+SHIFT+D B:
+Binding(ALT+SHIFT+D B,
+	ParameterizedCommand(Command(bndtools.launch.runShortcut.debug,Debug Bnd OSGi Run Launcher,
+		Debug Bnd OSGi Run Launcher,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@575679db,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D B,
+	ParameterizedCommand(Command(org.springsource.ide.eclipse.boot.BootLaunchShortcut.debug,Debug Spring Boot App,
+		Debug Spring Boot App,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@f850ddc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-14 01:11:38.297
+!MESSAGE A conflict occurred for ALT+SHIFT+X B:
+Binding(ALT+SHIFT+X B,
+	ParameterizedCommand(Command(bndtools.launch.runShortcut.run,Run Bnd OSGi Run Launcher,
+		Run Bnd OSGi Run Launcher,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3467b2f1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X B,
+	ParameterizedCommand(Command(org.springsource.ide.eclipse.boot.BootLaunchShortcut.run,Run Spring Boot App,
+		Run Spring Boot App,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2cd0e3f2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.483
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.AssetCategory.search5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.484
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.AssetTag.get-tags5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.484
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.AssetTag.get-tags-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.485
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.AssetTag.merge-tags3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.485
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.AssetTag.search5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.485
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.BlogsEntry.get-group-entries4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.485
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.BookmarksEntry.open-entry1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.486
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.BookmarksFolder.get-subfolder-ids3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.486
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.ClassName.fetch-class-name-id1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.486
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDLRecord.add-record5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.487
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDMStructure.get-structures1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.487
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDMTemplate.search10'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.487
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDMTemplate.search13'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.488
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDMTemplate.search-count10'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.488
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDMTemplate.search-count7'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.488
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.add-file-entry9'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.488
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.get-file-entries3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.488
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.get-file-entries5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.489
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.get-folders5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.489
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.get-group-file-entries5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.489
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.get-subfolder-ids3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.490
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.update-file-entry9'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.490
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFileEntry.get-file-entries6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.490
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFileEntry.get-file-entries6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.490
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFileEntry.get-file-entries-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.490
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFileEntry.get-file-entries-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.491
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFileEntryType.update-file-entry-type5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.491
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFolder.get-subfolder-ids3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.491
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.ExpandoValue.get-data5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.492
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalArticle.get-article3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.492
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalArticle.get-latest-article3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.492
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalArticle.move-article-from-trash4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.492
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalArticle.search20'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.492
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalArticle.search-count17'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.493
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalFolder.get-folders-and-articles-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.493
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalFolder.get-subfolder-ids3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.493
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalStructure.get-structures1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.493
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.Layout.import-layouts4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.494
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.Layout.update-layout15'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.494
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.LayoutSet.update-logo4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.494
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBCategory.delete-category2'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.495
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBCategory.get-categories4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.495
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBCategory.get-categories5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.495
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBCategory.get-categories-count2'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.495
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBCategory.get-categories-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.496
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBThread.get-group-threads6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.496
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBThread.get-group-threads-count4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.496
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MDRAction.add-action6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.496
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MDRAction.update-action6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.497
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MDRRule.update-rule6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.497
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.PortletPreferences.restore-archived-preferences5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.497
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.PortletPreferences.restore-archived-preferences5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.498
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.Region.get-regions1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.498
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.SocialActivity.get-activities3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.498
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.SocialActivity.get-activities5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.498
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.SocialActivity.get-activities-count1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.499
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.SocialActivity.get-activities-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.499
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.TrashEntry.delete-entries1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.499
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.UserGroup.get-user-group1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.500
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.UserGroupGroupRole.add-user-group-group-roles3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.500
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.UserGroupGroupRole.delete-user-group-group-roles3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.500
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.UserGroupRole.add-user-group-roles3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.500
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.UserGroupRole.delete-user-group-roles3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.500
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.WikiPage.get-page3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.501
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.WikiPage.get-page3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.531
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:11:40.531
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2018-07-14 01:15:16.442
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2018-07-14 01:15:16.460
+!MESSAGE IvyDE plugin started
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.438
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.AssetCategory.search5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.439
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.AssetTag.get-tags5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.439
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.AssetTag.get-tags-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.439
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.AssetTag.merge-tags3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.440
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.AssetTag.search5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.440
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.BlogsEntry.get-group-entries4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.441
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.BookmarksEntry.open-entry1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.441
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.BookmarksFolder.get-subfolder-ids3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.441
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.ClassName.fetch-class-name-id1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.442
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDLRecord.add-record5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.442
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDMStructure.get-structures1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.442
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDMTemplate.search10'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.443
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDMTemplate.search13'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.443
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDMTemplate.search-count10'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.444
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDMTemplate.search-count7'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.444
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.add-file-entry9'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.445
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.get-file-entries3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.445
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.get-file-entries5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.445
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.get-folders5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.445
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.get-group-file-entries5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.445
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.get-subfolder-ids3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.446
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.update-file-entry9'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.446
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFileEntry.get-file-entries6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.446
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFileEntry.get-file-entries6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.446
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFileEntry.get-file-entries-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.447
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFileEntry.get-file-entries-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.447
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFileEntryType.update-file-entry-type5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.447
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFolder.get-subfolder-ids3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.447
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.ExpandoValue.get-data5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.448
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalArticle.get-article3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.448
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalArticle.get-latest-article3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.448
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalArticle.move-article-from-trash4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.449
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalArticle.search20'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.449
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalArticle.search-count17'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.449
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalFolder.get-folders-and-articles-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.449
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalFolder.get-subfolder-ids3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.450
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalStructure.get-structures1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.450
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.Layout.import-layouts4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.450
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.Layout.update-layout15'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.451
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.LayoutSet.update-logo4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.451
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBCategory.delete-category2'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.451
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBCategory.get-categories4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.452
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBCategory.get-categories5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.452
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBCategory.get-categories-count2'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.452
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBCategory.get-categories-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.453
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBThread.get-group-threads6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.453
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBThread.get-group-threads-count4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.453
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MDRAction.add-action6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.454
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MDRAction.update-action6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.454
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MDRRule.update-rule6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.455
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.PortletPreferences.restore-archived-preferences5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.455
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.PortletPreferences.restore-archived-preferences5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.455
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.Region.get-regions1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.456
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.SocialActivity.get-activities3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.456
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.SocialActivity.get-activities5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.456
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.SocialActivity.get-activities-count1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.456
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.SocialActivity.get-activities-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.457
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.TrashEntry.delete-entries1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.457
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.UserGroup.get-user-group1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.458
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.UserGroupGroupRole.add-user-group-group-roles3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.458
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.UserGroupGroupRole.delete-user-group-group-roles3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.458
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.UserGroupRole.add-user-group-roles3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.459
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.UserGroupRole.delete-user-group-roles3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.459
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.WikiPage.get-page3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.459
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.WikiPage.get-page3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.492
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-14 01:25:52.492
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-07-19 21:27:27.713 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/SDPB18/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/SDPB18/.eclipse_keyring
+
+!ENTRY org.eclipse.ui 2 0 2018-07-19 21:30:56.217
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-07-19 21:30:56.217
+!MESSAGE Cannot bind to an undefined command: plug-in='com.liferay.ide.project.ui', id='com.liferay.ide.project.ui.upgrade.openLiferay7UpgradeAssistant'
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-07-19 21:30:56.217
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.lsp4e', id='org.eclipse.lsp4e.togglehighlight'
+
+!ENTRY org.eclipse.core.net 1 0 2018-07-19 21:30:59.298
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16|softonic|*.softonic by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2018-07-19 21:31:00.510
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 21:31:00.510
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4a96ff5b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6eb2e97d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 21:31:00.510
+!MESSAGE A conflict occurred for ALT+COMMAND+V:
+Binding(ALT+COMMAND+V,
+	ParameterizedCommand(Command(com.liferay.ide.service.ui.buildService,Build Service,
+		Run the build-service command,
+		Category(com.liferay.ide.project.ui.handlers,Liferay Commands,Liferay Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2a777cc3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+V,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.move.element,Move - Refactoring ,
+		Move the selected element to a new location,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4784ce56,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 21:31:00.510
+!MESSAGE A conflict occurred for ALT+COMMAND+W:
+Binding(ALT+COMMAND+W,
+	ParameterizedCommand(Command(com.liferay.ide.service.ui.buildWSDD,Build WSDD,
+		Run the build-wsdd command,
+		Category(com.liferay.ide.project.ui.handlers,Liferay Commands,Liferay Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3a158dda,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+W,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.showInQuickMenu,Show In...,
+		Open the Show In menu,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@439562e4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 21:31:00.510
+!MESSAGE A conflict occurred for ALT+COMMAND+N:
+Binding(ALT+COMMAND+N,
+	ParameterizedCommand(Command(com.liferay.ide.portlet.ui.buildLang,Build Languages,
+		Run the build-lang command,
+		Category(com.liferay.ide.project.ui.handlers,Liferay Commands,Liferay Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@52158f31,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+N,
+	ParameterizedCommand(Command(org.eclipse.ui.file.newQuickMenu,New menu,
+		Open the New menu,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@33821d5b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 21:31:00.510
+!MESSAGE A conflict occurred for ALT+SHIFT+D B:
+Binding(ALT+SHIFT+D B,
+	ParameterizedCommand(Command(bndtools.launch.runShortcut.debug,Debug Bnd OSGi Run Launcher,
+		Debug Bnd OSGi Run Launcher,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@25ef2dac,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D B,
+	ParameterizedCommand(Command(org.springsource.ide.eclipse.boot.BootLaunchShortcut.debug,Debug Spring Boot App,
+		Debug Spring Boot App,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4d05f9b7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 21:31:00.510
+!MESSAGE A conflict occurred for ALT+SHIFT+X B:
+Binding(ALT+SHIFT+X B,
+	ParameterizedCommand(Command(bndtools.launch.runShortcut.run,Run Bnd OSGi Run Launcher,
+		Run Bnd OSGi Run Launcher,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@33178b21,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X B,
+	ParameterizedCommand(Command(org.springsource.ide.eclipse.boot.BootLaunchShortcut.run,Run Spring Boot App,
+		Run Spring Boot App,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@10dc30dd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2018-07-19 22:15:00.396
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2018-07-19 22:15:00.419
+!MESSAGE IvyDE plugin started
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.451
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.AssetCategory.search5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.451
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.AssetTag.get-tags5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.452
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.AssetTag.get-tags-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.452
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.AssetTag.merge-tags3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.452
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.AssetTag.search5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.452
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.BlogsEntry.get-group-entries4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.453
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.BookmarksEntry.open-entry1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.453
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.BookmarksFolder.get-subfolder-ids3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.453
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.ClassName.fetch-class-name-id1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.454
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDLRecord.add-record5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.454
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDMStructure.get-structures1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.454
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDMTemplate.search10'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.455
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDMTemplate.search13'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.455
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDMTemplate.search-count10'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.455
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDMTemplate.search-count7'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.456
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.add-file-entry9'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.456
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.get-file-entries3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.456
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.get-file-entries5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.457
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.get-folders5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.457
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.get-group-file-entries5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.457
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.get-subfolder-ids3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.457
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.update-file-entry9'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.458
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFileEntry.get-file-entries6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.458
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFileEntry.get-file-entries6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.458
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFileEntry.get-file-entries-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.458
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFileEntry.get-file-entries-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.459
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFileEntryType.update-file-entry-type5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.459
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFolder.get-subfolder-ids3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.459
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.ExpandoValue.get-data5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.460
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalArticle.get-article3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.460
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalArticle.get-latest-article3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.460
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalArticle.move-article-from-trash4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.460
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalArticle.search20'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.461
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalArticle.search-count17'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.461
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalFolder.get-folders-and-articles-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.461
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalFolder.get-subfolder-ids3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.461
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalStructure.get-structures1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.462
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.Layout.import-layouts4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.462
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.Layout.update-layout15'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.462
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.LayoutSet.update-logo4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.463
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBCategory.delete-category2'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.463
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBCategory.get-categories4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.463
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBCategory.get-categories5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.463
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBCategory.get-categories-count2'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.464
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBCategory.get-categories-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.464
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBThread.get-group-threads6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.464
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBThread.get-group-threads-count4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.464
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MDRAction.add-action6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.465
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MDRAction.update-action6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.465
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MDRRule.update-rule6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.465
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.PortletPreferences.restore-archived-preferences5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.466
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.PortletPreferences.restore-archived-preferences5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.466
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.Region.get-regions1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.466
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.SocialActivity.get-activities3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.467
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.SocialActivity.get-activities5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.467
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.SocialActivity.get-activities-count1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.467
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.SocialActivity.get-activities-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.468
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.TrashEntry.delete-entries1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.468
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.UserGroup.get-user-group1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.468
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.UserGroupGroupRole.add-user-group-group-roles3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.468
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.UserGroupGroupRole.delete-user-group-group-roles3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.469
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.UserGroupRole.add-user-group-roles3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.469
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.UserGroupRole.delete-user-group-roles3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.469
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.WikiPage.get-page3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.469
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.WikiPage.get-page3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.497
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:15:21.497
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.439
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.AssetCategory.search5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.439
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.AssetTag.get-tags5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.440
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.AssetTag.get-tags-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.440
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.AssetTag.merge-tags3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.440
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.AssetTag.search5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.440
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.BlogsEntry.get-group-entries4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.441
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.BookmarksEntry.open-entry1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.441
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.BookmarksFolder.get-subfolder-ids3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.441
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.ClassName.fetch-class-name-id1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.441
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDLRecord.add-record5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.442
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDMStructure.get-structures1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.442
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDMTemplate.search10'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.442
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDMTemplate.search13'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.442
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDMTemplate.search-count10'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.443
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DDMTemplate.search-count7'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.443
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.add-file-entry9'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.443
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.get-file-entries3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.443
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.get-file-entries5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.443
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.get-folders5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.444
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.get-group-file-entries5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.444
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.get-subfolder-ids3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.444
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLApp.update-file-entry9'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.444
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFileEntry.get-file-entries6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.445
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFileEntry.get-file-entries6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.445
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFileEntry.get-file-entries-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.445
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFileEntry.get-file-entries-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.445
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFileEntryType.update-file-entry-type5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.445
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.DLFolder.get-subfolder-ids3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.446
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.ExpandoValue.get-data5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.446
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalArticle.get-article3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.446
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalArticle.get-latest-article3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.447
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalArticle.move-article-from-trash4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.447
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalArticle.search20'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.447
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalArticle.search-count17'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.447
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalFolder.get-folders-and-articles-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.448
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalFolder.get-subfolder-ids3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.448
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.JournalStructure.get-structures1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.448
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.Layout.import-layouts4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.448
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.Layout.update-layout15'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.449
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.LayoutSet.update-logo4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.449
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBCategory.delete-category2'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.449
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBCategory.get-categories4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.449
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBCategory.get-categories5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.450
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBCategory.get-categories-count2'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.450
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBCategory.get-categories-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.450
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBThread.get-group-threads6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.450
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MBThread.get-group-threads-count4'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.451
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MDRAction.add-action6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.451
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MDRAction.update-action6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.451
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.MDRRule.update-rule6'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.451
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.PortletPreferences.restore-archived-preferences5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.452
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.PortletPreferences.restore-archived-preferences5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.452
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.Region.get-regions1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.452
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.SocialActivity.get-activities3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.452
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.SocialActivity.get-activities5'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.453
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.SocialActivity.get-activities-count1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.453
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.SocialActivity.get-activities-count3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.453
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.TrashEntry.delete-entries1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.454
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.UserGroup.get-user-group1'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.454
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.UserGroupGroupRole.add-user-group-group-roles3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.454
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.UserGroupGroupRole.delete-user-group-group-roles3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.454
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.UserGroupRole.add-user-group-roles3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.455
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.UserGroupRole.delete-user-group-roles3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.455
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.WikiPage.get-page3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.455
+!MESSAGE Duplicate template id: 'com.liferay.ide.ui.templates.WikiPage.get-page3'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.473
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-19 22:23:50.473
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.buildship.core 2 0 2018-07-19 22:37:23.428
+!MESSAGE Synchronize Gradle builds with workspace failed due to an error in the referenced Gradle build.
+!STACK 0
+org.gradle.tooling.BuildException: Could not fetch model of type 'EclipseProject' using Gradle distribution 'https://services.gradle.org/distributions/gradle-4.8.1-bin.zip'.
+	at org.gradle.tooling.internal.consumer.ExceptionTransformer.transform(ExceptionTransformer.java:51)
+	at org.gradle.tooling.internal.consumer.ExceptionTransformer.transform(ExceptionTransformer.java:29)
+	at org.gradle.tooling.internal.consumer.ResultHandlerAdapter.onFailure(ResultHandlerAdapter.java:41)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:57)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.gradle.tooling.internal.consumer.BlockingResultHandler.getResult(BlockingResultHandler.java:46)
+	at org.gradle.tooling.internal.consumer.DefaultModelBuilder.get(DefaultModelBuilder.java:51)
+	at com.gradleware.tooling.toolingclient.internal.DefaultToolingClient.executeAndWait(DefaultToolingClient.java:106)
+	at com.gradleware.tooling.toolingclient.internal.DefaultModelRequest.executeAndWait(DefaultModelRequest.java:79)
+	at com.gradleware.tooling.toolingmodel.repository.internal.BaseModelRepository$1.get(BaseModelRepository.java:95)
+	at com.gradleware.tooling.toolingmodel.repository.internal.BaseModelRepository.executeAndWait(BaseModelRepository.java:163)
+	at com.gradleware.tooling.toolingmodel.repository.internal.BaseModelRepository.access$000(BaseModelRepository.java:41)
+	at com.gradleware.tooling.toolingmodel.repository.internal.BaseModelRepository$2.call(BaseModelRepository.java:121)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4724)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3522)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2315)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2193)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3932)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4721)
+	at com.gradleware.tooling.toolingmodel.repository.internal.BaseModelRepository.getFromCache(BaseModelRepository.java:138)
+	at com.gradleware.tooling.toolingmodel.repository.internal.BaseModelRepository.executeRequest(BaseModelRepository.java:117)
+	at com.gradleware.tooling.toolingmodel.repository.internal.BaseModelRepository.executeRequest(BaseModelRepository.java:88)
+	at com.gradleware.tooling.toolingmodel.repository.internal.DefaultSingleBuildModelRepository.fetchEclipseGradleBuild(DefaultSingleBuildModelRepository.java:185)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.fetchEclipseGradleBuild(DefaultModelProvider.java:53)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.synchronizeBuild(SynchronizeGradleBuildsJob.java:77)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.runToolingApiJob(SynchronizeGradleBuildsJob.java:69)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob$1.run(ToolingApiJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiInvoker.invoke(ToolingApiInvoker.java:63)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob.run(ToolingApiJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.gradle.internal.exceptions.LocationAwareException: Build file '/Users/SDPB18/Documents/workspace/SpringProy /microservice/build.gradle' line: 20
+A problem occurred evaluating root project 'microservice'.
+	at org.gradle.initialization.DefaultExceptionAnalyser.transform(DefaultExceptionAnalyser.java:74)
+	at org.gradle.initialization.MultipleBuildFailuresExceptionAnalyser.transform(MultipleBuildFailuresExceptionAnalyser.java:47)
+	at org.gradle.initialization.StackTraceSanitizingExceptionAnalyser.transform(StackTraceSanitizingExceptionAnalyser.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:143)
+	at org.gradle.initialization.DefaultGradleLauncher.getConfiguredBuild(DefaultGradleLauncher.java:110)
+	at org.gradle.internal.invocation.GradleBuildController$2.call(GradleBuildController.java:86)
+	at org.gradle.internal.invocation.GradleBuildController$2.call(GradleBuildController.java:83)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:152)
+	at org.gradle.internal.work.StopShieldingWorkerLeaseService.withLocks(StopShieldingWorkerLeaseService.java:38)
+	at org.gradle.internal.invocation.GradleBuildController.doBuild(GradleBuildController.java:96)
+	at org.gradle.internal.invocation.GradleBuildController.configure(GradleBuildController.java:83)
+	at org.gradle.tooling.internal.provider.runner.BuildModelActionRunner.run(BuildModelActionRunner.java:57)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.tooling.internal.provider.ValidatingBuildActionRunner.run(ValidatingBuildActionRunner.java:32)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$3.run(RunAsBuildOperationBuildActionRunner.java:47)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:317)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:309)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:185)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:97)
+	at org.gradle.internal.operations.DelegatingBuildOperationExecutor.run(DelegatingBuildOperationExecutor.java:31)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner.run(RunAsBuildOperationBuildActionRunner.java:43)
+	at org.gradle.tooling.internal.provider.SubscribableBuildActionRunner.run(SubscribableBuildActionRunner.java:51)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$1.transform(InProcessBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$1.transform(InProcessBuildActionExecuter.java:46)
+	at org.gradle.composite.internal.DefaultRootBuildState.run(DefaultRootBuildState.java:65)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:46)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:32)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:39)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:53)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:62)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:34)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:36)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:43)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:29)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:59)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:31)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:59)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:46)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:30)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:67)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:26)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:34)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:74)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:72)
+	at org.gradle.util.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:72)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.LogAndCheckHealth.execute(LogAndCheckHealth.java:55)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:62)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:82)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:50)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:295)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+Caused by: org.gradle.api.GradleScriptException: A problem occurred evaluating root project 'microservice'.
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:92)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl$2.run(DefaultScriptPluginFactory.java:204)
+	at org.gradle.configuration.ProjectScriptTarget.addConfiguration(ProjectScriptTarget.java:77)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:209)
+	at org.gradle.configuration.BuildOperationScriptPlugin$1.run(BuildOperationScriptPlugin.java:61)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:317)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:309)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:185)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:97)
+	at org.gradle.internal.operations.DelegatingBuildOperationExecutor.run(DelegatingBuildOperationExecutor.java:31)
+	at org.gradle.configuration.BuildOperationScriptPlugin.apply(BuildOperationScriptPlugin.java:58)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:41)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:26)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.doConfigure(LifecycleProjectEvaluator.java:66)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.access$100(LifecycleProjectEvaluator.java:37)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator$ConfigureProject.run(LifecycleProjectEvaluator.java:125)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:317)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:309)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:185)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:97)
+	at org.gradle.internal.operations.DelegatingBuildOperationExecutor.run(DelegatingBuildOperationExecutor.java:31)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:52)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:677)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:138)
+	at org.gradle.execution.TaskPathProjectEvaluator.configure(TaskPathProjectEvaluator.java:35)
+	at org.gradle.execution.TaskPathProjectEvaluator.configureHierarchy(TaskPathProjectEvaluator.java:60)
+	at org.gradle.configuration.DefaultBuildConfigurer.configure(DefaultBuildConfigurer.java:41)
+	at org.gradle.initialization.DefaultGradleLauncher$ConfigureBuild.run(DefaultGradleLauncher.java:262)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:317)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:309)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:185)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:97)
+	at org.gradle.internal.operations.DelegatingBuildOperationExecutor.run(DelegatingBuildOperationExecutor.java:31)
+	at org.gradle.initialization.DefaultGradleLauncher.configureBuild(DefaultGradleLauncher.java:175)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:132)
+	... 67 more
+Caused by: groovy.lang.MissingPropertyException: Could not set unknown property 'sourceCompatibility' for root project 'microservice' of type org.gradle.api.Project.
+	at org.gradle.internal.metaobject.AbstractDynamicObject.setMissingProperty(AbstractDynamicObject.java:115)
+	at org.gradle.groovy.scripts.BasicScript$ScriptDynamicObject.setMissingProperty(BasicScript.java:166)
+	at org.gradle.internal.metaobject.AbstractDynamicObject.setProperty(AbstractDynamicObject.java:75)
+	at org.gradle.groovy.scripts.BasicScript.setProperty(BasicScript.java:70)
+	at build_87nlfmyvocvyyxyn6j4wfrl7z.run(/Users/SDPB18/Documents/workspace/SpringProy /microservice/build.gradle:20)
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:90)
+	... 102 more
+
+!ENTRY org.eclipse.buildship.core 2 0 2018-07-19 22:37:39.203
+!MESSAGE Synchronize Gradle builds with workspace failed due to an error in the referenced Gradle build.
+!STACK 0
+org.gradle.tooling.BuildException: Could not fetch model of type 'EclipseProject' using Gradle distribution 'https://services.gradle.org/distributions/gradle-4.8.1-bin.zip'.
+	at org.gradle.tooling.internal.consumer.ExceptionTransformer.transform(ExceptionTransformer.java:51)
+	at org.gradle.tooling.internal.consumer.ExceptionTransformer.transform(ExceptionTransformer.java:29)
+	at org.gradle.tooling.internal.consumer.ResultHandlerAdapter.onFailure(ResultHandlerAdapter.java:41)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:57)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.gradle.tooling.internal.consumer.BlockingResultHandler.getResult(BlockingResultHandler.java:46)
+	at org.gradle.tooling.internal.consumer.DefaultModelBuilder.get(DefaultModelBuilder.java:51)
+	at com.gradleware.tooling.toolingclient.internal.DefaultToolingClient.executeAndWait(DefaultToolingClient.java:106)
+	at com.gradleware.tooling.toolingclient.internal.DefaultModelRequest.executeAndWait(DefaultModelRequest.java:79)
+	at com.gradleware.tooling.toolingmodel.repository.internal.BaseModelRepository$1.get(BaseModelRepository.java:95)
+	at com.gradleware.tooling.toolingmodel.repository.internal.BaseModelRepository.executeAndWait(BaseModelRepository.java:163)
+	at com.gradleware.tooling.toolingmodel.repository.internal.BaseModelRepository.access$000(BaseModelRepository.java:41)
+	at com.gradleware.tooling.toolingmodel.repository.internal.BaseModelRepository$2.call(BaseModelRepository.java:121)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4724)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3522)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2315)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2193)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3932)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4721)
+	at com.gradleware.tooling.toolingmodel.repository.internal.BaseModelRepository.getFromCache(BaseModelRepository.java:138)
+	at com.gradleware.tooling.toolingmodel.repository.internal.BaseModelRepository.executeRequest(BaseModelRepository.java:117)
+	at com.gradleware.tooling.toolingmodel.repository.internal.BaseModelRepository.executeRequest(BaseModelRepository.java:88)
+	at com.gradleware.tooling.toolingmodel.repository.internal.DefaultSingleBuildModelRepository.fetchEclipseGradleBuild(DefaultSingleBuildModelRepository.java:185)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.fetchEclipseGradleBuild(DefaultModelProvider.java:53)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.synchronizeBuild(SynchronizeGradleBuildsJob.java:77)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.runToolingApiJob(SynchronizeGradleBuildsJob.java:69)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob$1.run(ToolingApiJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiInvoker.invoke(ToolingApiInvoker.java:63)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob.run(ToolingApiJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.gradle.internal.exceptions.LocationAwareException: Build file '/Users/SDPB18/Documents/workspace/SpringProy /microservice/build.gradle' line: 20
+A problem occurred evaluating root project 'microservice'.
+	at org.gradle.initialization.DefaultExceptionAnalyser.transform(DefaultExceptionAnalyser.java:74)
+	at org.gradle.initialization.MultipleBuildFailuresExceptionAnalyser.transform(MultipleBuildFailuresExceptionAnalyser.java:47)
+	at org.gradle.initialization.StackTraceSanitizingExceptionAnalyser.transform(StackTraceSanitizingExceptionAnalyser.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:143)
+	at org.gradle.initialization.DefaultGradleLauncher.getConfiguredBuild(DefaultGradleLauncher.java:110)
+	at org.gradle.internal.invocation.GradleBuildController$2.call(GradleBuildController.java:86)
+	at org.gradle.internal.invocation.GradleBuildController$2.call(GradleBuildController.java:83)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:152)
+	at org.gradle.internal.work.StopShieldingWorkerLeaseService.withLocks(StopShieldingWorkerLeaseService.java:38)
+	at org.gradle.internal.invocation.GradleBuildController.doBuild(GradleBuildController.java:96)
+	at org.gradle.internal.invocation.GradleBuildController.configure(GradleBuildController.java:83)
+	at org.gradle.tooling.internal.provider.runner.BuildModelActionRunner.run(BuildModelActionRunner.java:57)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.tooling.internal.provider.ValidatingBuildActionRunner.run(ValidatingBuildActionRunner.java:32)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$3.run(RunAsBuildOperationBuildActionRunner.java:47)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:317)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:309)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:185)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:97)
+	at org.gradle.internal.operations.DelegatingBuildOperationExecutor.run(DelegatingBuildOperationExecutor.java:31)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner.run(RunAsBuildOperationBuildActionRunner.java:43)
+	at org.gradle.tooling.internal.provider.SubscribableBuildActionRunner.run(SubscribableBuildActionRunner.java:51)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$1.transform(InProcessBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$1.transform(InProcessBuildActionExecuter.java:46)
+	at org.gradle.composite.internal.DefaultRootBuildState.run(DefaultRootBuildState.java:65)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:46)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:32)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:39)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:53)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:62)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:34)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:36)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:43)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:29)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:59)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:31)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:59)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:46)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:30)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:67)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:26)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:34)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:74)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:72)
+	at org.gradle.util.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:72)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.LogAndCheckHealth.execute(LogAndCheckHealth.java:55)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:62)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:82)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:50)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:295)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+Caused by: org.gradle.api.GradleScriptException: A problem occurred evaluating root project 'microservice'.
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:92)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl$2.run(DefaultScriptPluginFactory.java:204)
+	at org.gradle.configuration.ProjectScriptTarget.addConfiguration(ProjectScriptTarget.java:77)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:209)
+	at org.gradle.configuration.BuildOperationScriptPlugin$1.run(BuildOperationScriptPlugin.java:61)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:317)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:309)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:185)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:97)
+	at org.gradle.internal.operations.DelegatingBuildOperationExecutor.run(DelegatingBuildOperationExecutor.java:31)
+	at org.gradle.configuration.BuildOperationScriptPlugin.apply(BuildOperationScriptPlugin.java:58)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:41)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:26)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.doConfigure(LifecycleProjectEvaluator.java:66)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.access$100(LifecycleProjectEvaluator.java:37)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator$ConfigureProject.run(LifecycleProjectEvaluator.java:125)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:317)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:309)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:185)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:97)
+	at org.gradle.internal.operations.DelegatingBuildOperationExecutor.run(DelegatingBuildOperationExecutor.java:31)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:52)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:677)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:138)
+	at org.gradle.execution.TaskPathProjectEvaluator.configure(TaskPathProjectEvaluator.java:35)
+	at org.gradle.execution.TaskPathProjectEvaluator.configureHierarchy(TaskPathProjectEvaluator.java:60)
+	at org.gradle.configuration.DefaultBuildConfigurer.configure(DefaultBuildConfigurer.java:41)
+	at org.gradle.initialization.DefaultGradleLauncher$ConfigureBuild.run(DefaultGradleLauncher.java:262)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:317)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:309)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:185)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:97)
+	at org.gradle.internal.operations.DelegatingBuildOperationExecutor.run(DelegatingBuildOperationExecutor.java:31)
+	at org.gradle.initialization.DefaultGradleLauncher.configureBuild(DefaultGradleLauncher.java:175)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:132)
+	... 67 more
+Caused by: groovy.lang.MissingPropertyException: Could not set unknown property 'sourceCompatibility' for root project 'microservice' of type org.gradle.api.Project.
+	at org.gradle.internal.metaobject.AbstractDynamicObject.setMissingProperty(AbstractDynamicObject.java:115)
+	at org.gradle.groovy.scripts.BasicScript$ScriptDynamicObject.setMissingProperty(BasicScript.java:166)
+	at org.gradle.internal.metaobject.AbstractDynamicObject.setProperty(AbstractDynamicObject.java:75)
+	at org.gradle.groovy.scripts.BasicScript.setProperty(BasicScript.java:70)
+	at build_87nlfmyvocvyyxyn6j4wfrl7z.run(/Users/SDPB18/Documents/workspace/SpringProy /microservice/build.gradle:20)
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:90)
+	... 102 more
+!SESSION 2018-07-19 22:38:28.745 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/SDPB18/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/SDPB18/.eclipse_keyring
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-07-19 22:39:02.894
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 2 0 2018-07-19 22:39:03.878
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-07-19 22:39:03.878
+!MESSAGE Cannot bind to an undefined command: plug-in='com.liferay.ide.project.ui', id='com.liferay.ide.project.ui.upgrade.openLiferay7UpgradeAssistant'
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-07-19 22:39:03.878
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.lsp4e', id='org.eclipse.lsp4e.togglehighlight'
+
+!ENTRY org.eclipse.core.net 1 0 2018-07-19 22:39:04.279
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16|softonic|*.softonic by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2018-07-19 22:39:05.649
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 22:39:05.649
+!MESSAGE A conflict occurred for ALT+COMMAND+V:
+Binding(ALT+COMMAND+V,
+	ParameterizedCommand(Command(com.liferay.ide.service.ui.buildService,Build Service,
+		Run the build-service command,
+		Category(com.liferay.ide.project.ui.handlers,Liferay Commands,Liferay Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@78395e28,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+V,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.move.element,Move - Refactoring ,
+		Move the selected element to a new location,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7b3db079,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 22:39:05.649
+!MESSAGE A conflict occurred for ALT+COMMAND+N:
+Binding(ALT+COMMAND+N,
+	ParameterizedCommand(Command(com.liferay.ide.portlet.ui.buildLang,Build Languages,
+		Run the build-lang command,
+		Category(com.liferay.ide.project.ui.handlers,Liferay Commands,Liferay Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6ef5e46a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+N,
+	ParameterizedCommand(Command(org.eclipse.ui.file.newQuickMenu,New menu,
+		Open the New menu,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5b7e2a88,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 22:39:05.649
+!MESSAGE A conflict occurred for ALT+COMMAND+W:
+Binding(ALT+COMMAND+W,
+	ParameterizedCommand(Command(com.liferay.ide.service.ui.buildWSDD,Build WSDD,
+		Run the build-wsdd command,
+		Category(com.liferay.ide.project.ui.handlers,Liferay Commands,Liferay Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6984f7d1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+W,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.showInQuickMenu,Show In...,
+		Open the Show In menu,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7fac3ce0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 22:39:05.649
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3e3b41cb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@14bb16ee,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 22:39:05.649
+!MESSAGE A conflict occurred for ALT+SHIFT+X B:
+Binding(ALT+SHIFT+X B,
+	ParameterizedCommand(Command(bndtools.launch.runShortcut.run,Run Bnd OSGi Run Launcher,
+		Run Bnd OSGi Run Launcher,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5acf51d7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X B,
+	ParameterizedCommand(Command(org.springsource.ide.eclipse.boot.BootLaunchShortcut.run,Run Spring Boot App,
+		Run Spring Boot App,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@441a2d52,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 22:39:05.649
+!MESSAGE A conflict occurred for ALT+SHIFT+D B:
+Binding(ALT+SHIFT+D B,
+	ParameterizedCommand(Command(bndtools.launch.runShortcut.debug,Debug Bnd OSGi Run Launcher,
+		Debug Bnd OSGi Run Launcher,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@204b1903,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D B,
+	ParameterizedCommand(Command(org.springsource.ide.eclipse.boot.BootLaunchShortcut.debug,Debug Spring Boot App,
+		Debug Spring Boot App,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6c8b6782,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2018-07-19 22:40:53.991
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2018-07-19 22:40:54.005
+!MESSAGE IvyDE plugin started
+!SESSION 2018-07-19 22:44:59.552 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/SDPB18/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/SDPB18/.eclipse_keyring
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-07-19 22:45:05.871
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 2 0 2018-07-19 22:45:06.852
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-07-19 22:45:06.852
+!MESSAGE Cannot bind to an undefined command: plug-in='com.liferay.ide.project.ui', id='com.liferay.ide.project.ui.upgrade.openLiferay7UpgradeAssistant'
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-07-19 22:45:06.852
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.lsp4e', id='org.eclipse.lsp4e.togglehighlight'
+
+!ENTRY org.eclipse.core.net 1 0 2018-07-19 22:45:06.905
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16|softonic|*.softonic by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2018-07-19 22:45:08.685
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 22:45:08.685
+!MESSAGE A conflict occurred for ALT+COMMAND+V:
+Binding(ALT+COMMAND+V,
+	ParameterizedCommand(Command(com.liferay.ide.service.ui.buildService,Build Service,
+		Run the build-service command,
+		Category(com.liferay.ide.project.ui.handlers,Liferay Commands,Liferay Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@731a5a39,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+V,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.move.element,Move - Refactoring ,
+		Move the selected element to a new location,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1acd952e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 22:45:08.685
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6da76bb1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2ceb722e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 22:45:08.685
+!MESSAGE A conflict occurred for ALT+COMMAND+W:
+Binding(ALT+COMMAND+W,
+	ParameterizedCommand(Command(com.liferay.ide.service.ui.buildWSDD,Build WSDD,
+		Run the build-wsdd command,
+		Category(com.liferay.ide.project.ui.handlers,Liferay Commands,Liferay Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@d012e18,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+W,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.showInQuickMenu,Show In...,
+		Open the Show In menu,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7b13ae73,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 22:45:08.685
+!MESSAGE A conflict occurred for ALT+COMMAND+N:
+Binding(ALT+COMMAND+N,
+	ParameterizedCommand(Command(com.liferay.ide.portlet.ui.buildLang,Build Languages,
+		Run the build-lang command,
+		Category(com.liferay.ide.project.ui.handlers,Liferay Commands,Liferay Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2dbfb843,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+N,
+	ParameterizedCommand(Command(org.eclipse.ui.file.newQuickMenu,New menu,
+		Open the New menu,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5ab2c5d8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 22:45:08.685
+!MESSAGE A conflict occurred for ALT+SHIFT+D B:
+Binding(ALT+SHIFT+D B,
+	ParameterizedCommand(Command(bndtools.launch.runShortcut.debug,Debug Bnd OSGi Run Launcher,
+		Debug Bnd OSGi Run Launcher,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5ec75178,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D B,
+	ParameterizedCommand(Command(org.springsource.ide.eclipse.boot.BootLaunchShortcut.debug,Debug Spring Boot App,
+		Debug Spring Boot App,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@38410ce5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 22:45:08.685
+!MESSAGE A conflict occurred for ALT+SHIFT+X B:
+Binding(ALT+SHIFT+X B,
+	ParameterizedCommand(Command(bndtools.launch.runShortcut.run,Run Bnd OSGi Run Launcher,
+		Run Bnd OSGi Run Launcher,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@68ecc60e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X B,
+	ParameterizedCommand(Command(org.springsource.ide.eclipse.boot.BootLaunchShortcut.run,Run Spring Boot App,
+		Run Spring Boot App,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@24bc52ce,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2018-07-19 22:45:35.119
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2018-07-19 22:45:35.134
+!MESSAGE IvyDE plugin started
+!SESSION 2018-07-19 22:51:15.685 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/SDPB18/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/SDPB18/.eclipse_keyring
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-07-19 22:51:22.197
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2018-07-19 22:51:23.149
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16|softonic|*.softonic by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2018-07-19 22:51:23.185
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-07-19 22:51:23.186
+!MESSAGE Cannot bind to an undefined command: plug-in='com.liferay.ide.project.ui', id='com.liferay.ide.project.ui.upgrade.openLiferay7UpgradeAssistant'
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-07-19 22:51:23.186
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.lsp4e', id='org.eclipse.lsp4e.togglehighlight'
+
+!ENTRY org.eclipse.jface 2 0 2018-07-19 22:51:24.841
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 22:51:24.841
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@713323a3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4fd2b418,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 22:51:24.841
+!MESSAGE A conflict occurred for ALT+COMMAND+W:
+Binding(ALT+COMMAND+W,
+	ParameterizedCommand(Command(com.liferay.ide.service.ui.buildWSDD,Build WSDD,
+		Run the build-wsdd command,
+		Category(com.liferay.ide.project.ui.handlers,Liferay Commands,Liferay Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@dd5ea90,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+W,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.showInQuickMenu,Show In...,
+		Open the Show In menu,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@48c5a07d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 22:51:24.841
+!MESSAGE A conflict occurred for ALT+COMMAND+V:
+Binding(ALT+COMMAND+V,
+	ParameterizedCommand(Command(com.liferay.ide.service.ui.buildService,Build Service,
+		Run the build-service command,
+		Category(com.liferay.ide.project.ui.handlers,Liferay Commands,Liferay Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2083bcfd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+V,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.move.element,Move - Refactoring ,
+		Move the selected element to a new location,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7aabbe81,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 22:51:24.841
+!MESSAGE A conflict occurred for ALT+COMMAND+N:
+Binding(ALT+COMMAND+N,
+	ParameterizedCommand(Command(com.liferay.ide.portlet.ui.buildLang,Build Languages,
+		Run the build-lang command,
+		Category(com.liferay.ide.project.ui.handlers,Liferay Commands,Liferay Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@58885a2e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+N,
+	ParameterizedCommand(Command(org.eclipse.ui.file.newQuickMenu,New menu,
+		Open the New menu,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3d2bcf0a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 22:51:24.841
+!MESSAGE A conflict occurred for ALT+SHIFT+D B:
+Binding(ALT+SHIFT+D B,
+	ParameterizedCommand(Command(bndtools.launch.runShortcut.debug,Debug Bnd OSGi Run Launcher,
+		Debug Bnd OSGi Run Launcher,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@72e806,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D B,
+	ParameterizedCommand(Command(org.springsource.ide.eclipse.boot.BootLaunchShortcut.debug,Debug Spring Boot App,
+		Debug Spring Boot App,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@270a113f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-19 22:51:24.841
+!MESSAGE A conflict occurred for ALT+SHIFT+X B:
+Binding(ALT+SHIFT+X B,
+	ParameterizedCommand(Command(bndtools.launch.runShortcut.run,Run Bnd OSGi Run Launcher,
+		Run Bnd OSGi Run Launcher,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3dc976da,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X B,
+	ParameterizedCommand(Command(org.springsource.ide.eclipse.boot.BootLaunchShortcut.run,Run Spring Boot App,
+		Run Spring Boot App,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5e79bdf6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2018-07-19 22:51:49.636
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2018-07-19 22:51:49.649
+!MESSAGE IvyDE plugin started

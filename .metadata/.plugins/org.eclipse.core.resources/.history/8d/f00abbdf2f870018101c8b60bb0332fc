@@ -1,0 +1,5 @@
+package com.test.microservice.controllers;
+
+public class MainController {
+
+}
