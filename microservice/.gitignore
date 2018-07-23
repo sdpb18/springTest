@@ -1,19 +1,19 @@
 .gradle
-/build/
+*/build
 !gradle/wrapper/gradle-wrapper.jar
 
 ### STS ###
 .apt_generated
-.classpath
+**/.classpath
 .factorypath
-.project
-.settings
+**/.project
+**/.settings
 .springBeans
 .sts4-cache
 
 ### IntelliJ IDEA ###
 .idea
-*.iws
+**/*.iml
 *.iml
 *.ipr
 /out/
@@ -24,3 +24,14 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+
+*.class
+**/*.swp
+**/.ivy
+**/bin
+**/node_modules
+_config.yml
+*.metadata/
+*.recommenders/
+.bash_profile
+.SD_Store
